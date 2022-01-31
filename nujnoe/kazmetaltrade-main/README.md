@@ -1,2 +1,0 @@
-# kazmetaltrade
-Section sliders
