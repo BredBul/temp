@@ -1,0 +1,187 @@
+@charset "UTF-8";
+/* =============================================  Zeroing  --Start--  ============================================= */
+* {
+  padding: 0px 0px;
+  margin: 0px 0px;
+  border: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0px 0px;
+  border: 0;
+}
+
+a, a:visited {
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a:hover, a:active {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* ====================  If JavaScript is disabled  --Start--  ==================== */
+noscript {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.97);
+  z-index: 9999999999999999;
+}
+
+.noscript__content {
+  padding: 4px 12px;
+  text-align: center;
+}
+
+.noscript__text {
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.noscript__text a {
+  color: #33ff00;
+}
+
+/* ====================  If JavaScript is disabled  --End--  ==================== */
+/* =============================================  Zeroing  --End--  ============================================= */
+/* =============================================  My Code  --Start--  ============================================= */
+body {
+  background-color: #181818;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body._lock {
+  overflow-y: hidden;
+}
+
+body._minWindowScreen250 {
+  overflow: auto;
+}
+
+.wrapper {
+  background-color: #34434f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 1;
+  visibility: visible;
+}
+
+.wrapper._done {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+/* ====================  Bounding Сontainer  --Start--  ==================== */
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+/* ====================  Bounding Сontainer  --Start--  ==================== */
+/* ===================================  Progress Bar  --Start--  =================================== */
+.progressbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 6px;
+  z-index: 1111;
+  background: linear-gradient(172deg, #23f0bb, #50ff00, #f9ff00, #e11e1e, #8d00ff, #ff007a, #ff6700, #23f0bb, #f9ff00, #e11e1e, #e11e1e, #8d00ff, #ff6700);
+  background-size: 250% 60%;
+  -webkit-animation: animProgressBarBgc 12s ease-in-out infinite;
+          animation: animProgressBarBgc 12s ease-in-out infinite;
+}
+
+@-webkit-keyframes animProgressBarBgc {
+  0% {
+    background-position: 0% 18%;
+  }
+  50% {
+    background-position: 100% 83%;
+  }
+  100% {
+    background-position: 0% 18%;
+  }
+}
+
+@keyframes animProgressBarBgc {
+  0% {
+    background-position: 0% 18%;
+  }
+  50% {
+    background-position: 100% 83%;
+  }
+  100% {
+    background-position: 0% 18%;
+  }
+}
+
+/* ===================================  Progress Bar  --End--  =================================== */
+/* =============================================  My Code  --End--  ============================================= */

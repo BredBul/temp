@@ -1,0 +1,20 @@
+/* ===================================  Max-Width 360px  --Start--  =================================== */
+@media screen and (max-width: 360px) {
+	.options {
+		justify-content: space-around;
+		&__item:last-child {
+			padding-left: 0px;
+		}
+	}
+	.form__file {
+		text-align: center;
+	}
+	.file {
+		display: flex;
+		flex-direction: column;
+		&__prewiew {
+			padding: 22px 4px 12px;
+		}
+	}
+}
+/* ===================================  Max-Width 360px  --End--  =================================== */

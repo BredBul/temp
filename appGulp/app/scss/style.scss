@@ -1,0 +1,29 @@
+@import "include/_zero.scss";
+@import "include/_preloader.scss";
+@import "include/_header.scss";
+@import "include/_hi.scss";
+/* --------------------  Page --Начало--  -------------------- */
+.page {
+	padding: 60px 0px 30px 0px;
+	@media (max-width: 767px){
+		padding: 30px 0px;
+	}
+	.page__title {
+		padding: 2% 2px;
+		display: flex;
+		justify-content: center;
+	}
+	@import "include/_about.scss";
+	@import "include/_mywork.scss";
+	@import "include/_contact.scss";
+	@import "include/_footer.scss";
+}
+@import "include/_popup.scss";
+@import "include/_popup_info.scss";
+@import "include/_up__button.scss";
+@import "include/_anime__button.scss";
+@import "include/_begushay__stroka.scss";
+.page__footer {
+	position: relative;
+}
+/* --------------------  Page --Конец--  -------------------- */

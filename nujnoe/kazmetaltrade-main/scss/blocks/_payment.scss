@@ -1,0 +1,134 @@
+.payment__wrapper {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    align-items: center;
+}
+.payment__subtitle {
+    margin: 20px 0;
+    @include m-medium;
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+}
+.payment__item {
+    @include m-medium;
+    font-size: 17px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    list-style: disc;
+}
+.payment__desc {
+    margin-top: 5px;
+    @include m-light;
+    font-size: 18px;
+    line-height: 24px;
+}
+.payment__btn {
+    display: none;
+}
+// Form
+.payment__form {
+    max-width: 420px;
+    position: relative;
+    padding: 70px 35px;
+    background: $dark;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+}
+.payment__body {
+    max-width: 360px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.payment__text {
+    margin-bottom: 40px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $white;
+}
+.payment__toptitle {
+    margin-bottom: 20px;
+    @include m-light;
+    font-size: 24px;
+    line-height: 100%;
+}
+.payment__input {
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 15px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    border: none;
+    @include m-light;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    color: $white;
+}
+.payment__submit {
+    width: 100%;
+    background: $white;
+    border: none;
+    padding: 15px 0;
+    @include m-bold;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #1B1B1B;
+    cursor: pointer;
+}
+.payment__info {
+    max-width: 420px;
+    margin: 22px auto 0 auto;
+    @include m-ultra;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    color: $white;
+    opacity: 0.4;
+}
+
+@media screen and (max-width: 1100px) {
+    .payment__desc {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 950px) { 
+    .payment__wrapper {
+        padding-top: 50px;
+        padding-bottom: 25px;
+    }
+    .payment__form {    
+        padding: 50px 25px;
+    }
+    
+}
+@media screen and (max-width: 768px) { 
+    .payment__form {
+        padding: 40px 20px;
+    }
+    .payment__toptitle {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 700px) { 
+    .payment__wrapper {
+        padding: 25px 0;
+        display: block;
+    }
+    .payment__form {
+        display: none;
+    }
+    .payment__btn {
+        display: block;
+    }
+}

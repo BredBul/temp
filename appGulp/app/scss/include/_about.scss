@@ -1,0 +1,404 @@
+.page__about_body {
+    overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	@media (max-width: 1024px) {
+		justify-content: center;
+		flex-direction: column;
+	}
+	.page__about_content {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: start;
+		@media (max-width: 1024px){
+			justify-content: center;
+		} 
+		.about_content {
+			padding-left: 5%;
+			@media (max-width: 1024px){
+				padding: 0px 0px;
+			}
+			.page__about_img {
+				position: relative;
+				max-width: 220px;
+				width: 100%;
+				height: 250px;
+				& img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+			.about__info {
+				padding-top: 10%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				.about__info_name {
+					display: flex;
+					@media (max-width: 250px){
+						padding: 6px 2px;
+						flex-direction: column;
+						text-align: center;
+						border: solid 1px #ffffff;
+						border-left: none;
+						border-right: none;	
+					}
+					.info__name_question {
+						padding: 5px 6px;
+						font-weight: 700;
+					}
+					.info__name_answers {
+						padding: 2px 1px 2px 6px;
+						font-weight: 700;
+						opacity: 0.8;
+						cursor: pointer;
+						transition: all 0.4s;
+						&:hover {
+							opacity: 1;
+						}
+					}
+				}
+				.about__info_icon {
+					padding-top: 5%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					.info__icon {
+						margin: 0px 6px;
+						font-size: calc(25px + 1 * (100vw / 1140));
+						width: 45px;
+						height: 45px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						border-radius: 50%;
+						background: #000000;
+						background-image: url(../img/bg10.gif);
+						background-size: cover;
+						background-position: center;
+						transition: all 0.4s;
+						&:nth-child(1):hover {
+							background: #0051ff;
+						}
+						&:nth-child(2):hover {
+							background: #833ab4;
+						}
+						&:nth-child(3):hover {
+							background: #00ff18;
+						}
+						.__icons_up__button {
+							color: #ffffff;
+							animation: animInfoIcon 12s infinite;
+						}
+						@keyframes animInfoIcon {
+							0% {
+								transform: rotateY(0deg);
+							}
+							100% {
+								transform: rotateY(360deg);
+							}
+						}
+					}
+				}
+			}
+		}
+		.about__profile {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			@media (max-width: 767px){
+				width: 75%;
+			}
+			@media (max-width: 370px){
+				width: 96%;
+			}
+			.about__profile_title {
+				display: flex;
+				justify-content: center;
+				@media (max-width: 767px) {
+					flex-direction: column;
+				}
+				.about__profile_hi {
+					padding: 0px 6px;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					@media (max-width: 767px) {
+						padding: 6% 6px;
+						text-align: center;
+					}
+					.about__profile_name {
+						padding-top: 45px;
+						font-weight: 700;
+						animation: animProfileName 2s infinite both;
+						@keyframes animProfileName {
+							0% {
+								transform: translateY(-45px);
+								animation-timing-function: ease-in;
+								opacity: 1;
+							}
+							24% {
+								opacity: 1;
+							}
+							40% {
+								transform: translateY(-24px);
+								animation-timing-function: ease-in;
+							}
+							65% {
+								transform: translateY(-12px);
+								animation-timing-function: ease-in;
+							}
+							72% {
+								transform: translateY(-6px);
+								animation-timing-function: ease-in;
+							}
+							82% {
+								transform: translateY(0px);
+								animation-timing-function: ease-in;
+							}
+							25%,
+							55%,
+							75%,
+							82% {
+								transform: translateY(0px);
+								animation-timing-function: ease-out;
+							}
+							85% {
+								transform: translateY(-4px);
+								animation-timing-function: ease-in;
+							}
+							88% {
+								transform: translateY(-6px);
+								animation-timing-function: ease-in;
+							}
+							90% {
+								transform: translateY(-12px);
+								animation-timing-function: ease-in;
+							}
+							94% {
+								transform: translateY(-24px);
+								animation-timing-function: ease-in;
+							}
+							100% {
+								transform: translateY(-45px);
+								animation-timing-function: ease-in;
+							}
+						}
+					}
+					.about__profile_profession {
+						padding: 6px 16px;
+						background: #000000;
+						color: #00ff1e;
+						font-weight: 700;
+						background-image: url(../img/bg-1.gif);
+						background-size: cover;
+						background-position: center;
+					}
+				}
+				.profile__skill_title {
+					margin-left: 40px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					text-align: center;
+					@media (max-width: 767px){
+						padding: 5% 4px;
+						margin-left: 0px;
+					}
+					.skill__title_text {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						.skill__title_name {
+							font-weight: 700;
+							position: relative;
+						}
+						.skill__title_border {
+							position: relative;
+							left: 11%;
+							padding: 0px 40px;
+							.skill__title_border_1 {
+								position: relative;
+								top: -24px;
+								&::before,
+								&::after {
+									content: "";
+									position: absolute;
+									top: 0px;
+									width: 44px;
+									height: 44px;
+									border: solid 2px rgb(255, 7, 7);
+									z-index: 1;
+									transition: all 0.8s ease 0s;
+									margin: 0px 0px 0px -50px;
+								}
+								&::before {
+									animation: skillTitle 14s infinite linear;
+								}
+								&::after {
+									animation: skillTitle 10s infinite linear;
+								}
+							}
+							.skill__title_border_2 {
+								position: relative;
+								top: -16px;
+								left: 8px;
+								&::before,
+								&::after {
+									content: "";
+									position: absolute;
+									top: 0px;
+									width: 27px;
+									height: 27px;
+									border: solid 2px rgb(255, 7, 7);
+									z-index: 1;
+									transition: all 0.8s ease 0s;
+									margin: 0px 0px 0px -50px;
+								}
+								&::before {
+									animation: skillTitle 14s infinite linear;
+								}
+								&::after {
+									animation: skillTitle 10s infinite linear;
+								}
+							}
+							.skill__title_border_3 {
+								position: relative;
+								top: -10px;
+								left: 14px;
+								&::before,
+								&::after {
+									content: "";
+									position: absolute;
+									top: 0px;
+									width: 14px;
+									height: 14px;
+									border: solid 1px rgb(255, 7, 7);
+									z-index: 1;
+									transition: all 0.8s ease 0s;
+									margin: 0px 0px 0px -50px;
+								}
+								&::before {
+									animation: skillTitle 14s infinite linear;
+								}
+								&::after {
+									animation: skillTitle 10s infinite linear;
+								}
+							}
+							.skill__title_border_4 {
+								position: relative;
+								top: -5.8px;
+								left: 18px;
+								&::before,
+								&::after {
+									content: "";
+									position: absolute;
+									top: 0px;
+									width: 6px;
+									height: 6px;
+									border: solid 1px rgb(255, 7, 7);
+									z-index: 1;
+									transition: all 0.8s ease 0s;
+									margin: 0px 0px 0px -50px;
+								}
+								&::before {
+									animation: skillTitle 16s infinite linear;
+								}
+								&::after {
+									animation: skillTitle 11s infinite linear;
+								}
+							}
+						}
+						@keyframes skillTitle {
+							0% {
+								transform: rotate(0deg);
+							}
+							100% {
+								transform: rotate(360deg);
+							}
+						}
+					}
+				}
+			}
+			.about__profile_skill {
+				padding-top: 20px;
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+				flex-wrap: wrap;
+				.profile__skill_info {
+					padding: 16px 4px 14px;
+					width: 100%;
+					display: flex;
+					align-items: center;
+					background: #000000;
+					&._bgi_active {
+						background-image: url(../img/bg-1.gif);
+						background-size: cover;
+						background-position: center;
+					}
+					@media (max-width: 767px) {
+						padding: 8px 4px 6px;
+						flex-direction: column;
+					}
+					.profile__skill_name {
+						padding: 6px 2px;
+						flex: 0 0 34%;
+						color: #ffffff;
+						font-weight: 700;
+					}
+					.profile__skill_text {
+						padding: 6px 2px;
+						flex: 0 0 66%;
+						color: #fffbfb;
+						font-weight: 700;
+						text-align: center;
+						.profile__skill_text-button {
+							color: #68ff75;
+							border-bottom: solid 1px #68ff75;
+							user-select: none;
+							cursor: pointer;
+						}
+					}   
+				} 
+			}
+			.about__profile_footer {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				height: 130px;
+				background: #000000;
+				&._bgi_active {
+					background: url(../img/bg-4.gif);
+					background-size: cover;
+					background-position: center;
+				}
+				@media (max-width: 240px){
+					flex-wrap: wrap;
+				}
+				.profile_footer_img {
+					margin: 0px 25px;
+					padding: 8px;
+					width: 40px;
+					height: 40px;
+					background: rgb(0, 0, 0);
+					background-image: url(../img/bg-3.gif);
+					background-size: cover;
+					background-position: center;
+					border: solid 1px #ffffff;
+					border-radius: 50%;
+				}
+				.profile_footer_icon_text {
+					padding-top: 8px;
+					color: #ffffff;
+					font-size: 12px;
+					font-weight: 600;
+					text-align: center;
+				}
+			}
+		}
+	}
+}

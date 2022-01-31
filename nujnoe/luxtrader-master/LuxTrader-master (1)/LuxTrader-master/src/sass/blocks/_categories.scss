@@ -1,0 +1,244 @@
+.categories {
+  overflow: hidden;
+
+  margin: 0px 0px 70px 0px;
+  @media (max-width: 7670px) {
+    margin: 0px 0px 40px 0px;
+  }
+  &__container {
+    overflow: hidden;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      height: 45px;
+      width: 100%;
+      background: $white;
+    }
+  }
+  &__items {
+    margin: 0px 0px 85px 0px;
+    @media (max-width: 650px) {
+      margin: 0;
+    }
+  }
+  &__row {
+    display: flex;
+    margin: 0 -50px;
+    position: relative;
+    padding: 33px 0px 0px 0px;
+    flex-wrap: wrap;
+    @media (max-width: 650px) {
+      margin: 0;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      width: 24px * 0.72;
+      height: 24px * 0.72;
+      flex: 0 0 24px * 0.72;
+      border: 1px solid $gold;
+      transform: translateX(-50%) rotate(45deg);
+      top: 3px;
+      left: 33.333%;
+
+      @media (max-width: 992px) {
+        left: 50%;
+      }
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 24px * 0.72;
+      height: 24px * 0.72;
+      flex: 0 0 24px * 0.72;
+      border: 1px solid $gold;
+      transform: translateX(-50%) rotate(45deg);
+      top: 3px;
+      left: 66.667%;
+
+      @media (max-width: 992px) {
+        display: none;
+      }
+    }
+  }
+
+  &__column {
+    padding: 0 50px 25px;
+    flex: 0 1 33.333%;
+    margin: 0px 0px 25px 0px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 992px) {
+      flex: 0 1 50%;
+    }
+
+    @media (max-width: 650px) {
+      flex: 1 1 100%;
+      padding: 0 0px 25px;
+    }
+
+    &:before {
+      content: "";
+      background: $gold;
+      width: 10px;
+      height: 10px;
+      flex: 0 0 10px;
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      bottom: -5px;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__decor {
+    z-index: 5;
+    position: absolute;
+    width: 24px;
+    height: calc(100% + 9px);
+    right: 0;
+    top: 0;
+    transform: translateX(50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:before {
+      content: "";
+      width: 1px;
+      flex: 1 1 auto;
+      background: $gold;
+    }
+
+    &:after {
+      content: "";
+      width: 24px * 0.72;
+      height: 24px * 0.72;
+      flex: 0 0 24px * 0.72;
+      border: 1px solid $gold;
+      transform: rotate(45deg);
+      margin: 15px 0px 0px 0px;
+    }
+
+    span {
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &:before {
+        content: "";
+        background: $gold;
+        width: 10px;
+        height: 10px;
+        flex: 0 0 10px;
+        border-radius: 50%;
+        margin: 20px 0;
+      }
+
+      &:after {
+        content: "";
+        width: 1px;
+        flex: 1 1 auto;
+        background: $gold;
+      }
+    }
+    @media (max-width: 650px) {
+      display: none;
+    }
+  }
+}
+
+.item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
+  border-radius: 50%;
+  padding: 30px 30px 40px 30px;
+  text-align: center;
+
+  @media (min-width: 992px) {
+    &:hover {
+      .item__title {
+        color: $gold;
+      }
+      .item__bg {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__decor {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__icon {
+    position: relative;
+    z-index: 2;
+    margin: 0px 0px 21px 0px;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 2;
+    color: $white;
+    font-family: "PFDin";
+    font-size: 21px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2.1px;
+    transition: all 0.3s ease-in-out;
+    flex: 1 1 auto;
+    letter-spacing: 2.1px;
+    line-height: 25px / 21px;
+  }
+
+  &__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba($color: $blue, $alpha: 0.8);
+    }
+  }
+}
+
+.text-categories {
+  color: #333333;
+  font-size: 15px;
+  line-height: calc(25 / 15);
+  p {
+    margin: 0px 0px 25px 0px;
+    &:last-child {
+      margin: 0px 0px 0px 0px;
+    }
+  }
+  &__text {
+    padding: 10px 0px 25px 130px;
+    background: url("../img/categories/decor-text.svg") left top no-repeat;
+    @media (max-width: 767px) {
+      padding: 10px 0px 25px 0px;
+      background: none;
+    }
+  }
+}

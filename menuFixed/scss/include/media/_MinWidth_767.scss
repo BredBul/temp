@@ -1,0 +1,30 @@
+/* =============================================  For PC  --Start--  --Start--  ============================================= */
+@media screen and (min-width: 767px){
+	.menu__list {
+		display: flex;
+		align-items: center;
+	}
+	/* ====================  Dropdown list  --Start--  ==================== */
+	.menu__sub_list {
+		transform: translate(0px, 10%);
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		transition: all 0.3s ease 0s;
+	}
+	body._mobile .menu__list_sublist._active {
+		.menu__sub_list {
+			opacity: 1;
+			visibility: visible;
+			transform: translate(0px, 0px);
+			pointer-events: all;
+			cursor: pointer;
+			display: block;
+		}
+		.menu__arrow {
+			transform: rotate(-180deg);
+		}
+	}
+	/* ====================  Dropdown list  --End--  ==================== */
+}
+/* =============================================  For PC  --Start--  --End--  ============================================= */

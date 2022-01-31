@@ -1,0 +1,101 @@
+.testimonials__wrapper {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.testimonials__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.testimonials__btn {
+    padding: 15px 30px;
+    @include m-light;
+    font-size: 15px;
+    color: $white;
+    background: $dark;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
+.testimonials__btn:hover {
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+}
+
+.testimonials__items {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+.testimonials__item {
+    padding: 30px;
+    background: $dark;
+    border-radius: 5px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+}
+.testimonials__info {
+    display: flex;
+    align-items: center;
+}
+.testimonials__img {
+    width: 50px;
+    height: 50px;
+    background-color: $white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonials__icon {
+    width: 25px;
+    height: 25px;
+}
+.testimonials__text {
+    margin-left: 15px;
+}
+.testimonials__name {
+    @include m-bold;
+    font-size: 15px;
+    letter-spacing: .5px;
+}
+.testimonials__date {
+    margin-top: 5px;
+    @include m-light;
+    font-size: 13px;
+}
+.testimonials__desc {
+    margin-top: 30px;
+    @include m-ultra;
+    letter-spacing: .5px;
+}
+
+@media screen and (max-width: 950px) { 
+    .testimonials__wrapper {
+        padding: 25px 0;
+    }
+}
+@media screen and (max-width: 700px) { 
+    .testimonials__items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width: 670px) { 
+    .testimonials__desc {
+        margin-top: 20px;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .testimonials__btn {
+        padding: 12px 15px;
+    }
+}
+@media screen and (max-width: 310px) { 
+    .testimonials__row {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

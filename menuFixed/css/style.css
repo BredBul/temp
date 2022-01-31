@@ -1,0 +1,705 @@
+@charset "UTF-8";
+/* =============================================  Zeroing  --Start--  ============================================= */
+* {
+  padding: 0px 0px;
+  margin: 0px 0px;
+  border: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0px 0px;
+  border: 0;
+}
+
+a, a:visited {
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a:hover, a:active {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* ====================  If JavaScript is disabled  --Start--  ==================== */
+noscript {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.97);
+  z-index: 9999999999999999;
+}
+
+.noscript__content {
+  padding: 4px 12px;
+  text-align: center;
+}
+
+.noscript__text {
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.noscript__text a {
+  color: #33ff00;
+}
+
+/* ====================  If JavaScript is disabled  --End--  ==================== */
+/* =============================================  Zeroing  --End--  ============================================= */
+/* =============================================  My Code  --Start--  ============================================= */
+body {
+  background-color: #181818;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body._lock {
+  overflow-y: hidden;
+}
+
+body._minWindowScreen250 {
+  overflow: auto;
+}
+
+/* ===================================  Preloader  --Start--  =================================== */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  z-index: 99999999;
+  opacity: 1;
+  visibility: visible;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transition: all 0.7s ease 0s;
+  transition: all 0.7s ease 0s;
+}
+
+.preloader._show {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* ====================  Centering  ==================== */
+.preloader__content {
+  position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* ====================  Icon downloads  ==================== */
+.preloader__downloads {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80px;
+  height: 80px;
+}
+
+.preloader__downloads_icon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-animation: 1s linear infinite;
+          animation: 1s linear infinite;
+}
+
+.preloader._show .preloader__downloads_icon {
+  -webkit-animation: none;
+          animation: none;
+}
+
+.preloader__downloads_icon-first {
+  border-bottom: solid 3px #ff7473;
+  -webkit-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+          transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+  -webkit-animation-name: preloaderDownloadIconFirst;
+          animation-name: preloaderDownloadIconFirst;
+}
+
+.preloader__downloads_icon-second {
+  border-right: solid 3px #ffc952;
+  -webkit-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+          transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+  -webkit-animation-name: preloaderDownloadIconSecond;
+          animation-name: preloaderDownloadIconSecond;
+}
+
+.preloader__downloads_icon-third {
+  border-top: solid 3px #47b8e0;
+  -webkit-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+          transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+  -webkit-animation-name: preloaderDownloadIconThird;
+          animation-name: preloaderDownloadIconThird;
+}
+
+/* ====================  preloaderDownloadIconFirst  --Start--  ==================== */
+@-webkit-keyframes preloaderDownloadIconFirst {
+  0% {
+    -webkit-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+            transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+            transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+@keyframes preloaderDownloadIconFirst {
+  0% {
+    -webkit-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+            transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+            transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+
+/* ====================  preloaderDownloadIconFirst  --End--  ==================== */
+/* ====================  preloaderDownloadIconSecond  --Start--  ==================== */
+@-webkit-keyframes preloaderDownloadIconSecond {
+  0% {
+    -webkit-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+            transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+            transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+  }
+}
+@keyframes preloaderDownloadIconSecond {
+  0% {
+    -webkit-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+            transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+            transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+  }
+}
+
+/* ====================  preloaderDownloadIconSecond  --End--  ==================== */
+/* ====================  preloaderDownloadIconThird  --Start--  ==================== */
+@-webkit-keyframes preloaderDownloadIconThird {
+  0% {
+    -webkit-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+            transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+            transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+  }
+}
+@keyframes preloaderDownloadIconThird {
+  0% {
+    -webkit-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+            transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+            transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+  }
+}
+
+/* ====================  preloaderDownloadIconThird  --End--  ==================== */
+/* ===================================  Preloader  --End--  =================================== */
+.wrapper {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper._done {
+  display: none;
+}
+
+/* ====================  Bounding Сontainer  --Start--  ==================== */
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0px 4px;
+}
+
+/* ====================  Bounding Сontainer  --Start--  ==================== */
+/* ===================================  IBG  --Start--  =================================== */
+._ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+._ibg img {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* .hi {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+}
+.hi__ibg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+} */
+/* ===================================  IBG  --End--  =================================== */
+/* ===================================  Header  --Start--  =================================== */
+.header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 90;
+  background-color: #000000;
+}
+
+.header__menu {
+  position: relative;
+  z-index: -1;
+}
+
+body._minWindowScreen250 .header {
+  position: relative;
+}
+
+.header__body {
+  padding: 10px 20px;
+  min-height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 99;
+}
+
+/* ===================================  Logo  --Start--  =================================== */
+.header__logo {
+  border-radius: 50%;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  z-index: 91;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 7px #ff0000,0px 0px 9px #ff0000,0px 0px 12px #ff0000,0px 0px 26px #ff0000;
+          box-shadow: 0px 0px 7px #ff0000,0px 0px 9px #ff0000,0px 0px 12px #ff0000,0px 0px 26px #ff0000;
+  -webkit-tap-highlight-color: rgba(68, 178, 195, 0.3);
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+body._pc .header__logo:hover {
+  -webkit-box-shadow: 0px 0px 9px #ff0000,0px 0px 14px #ff0000,0px 0px 22px #ff0000,0px 0px 34px #ff0000;
+          box-shadow: 0px 0px 9px #ff0000,0px 0px 14px #ff0000,0px 0px 22px #ff0000,0px 0px 34px #ff0000;
+}
+
+body._mobile .header__logo:active {
+  -webkit-box-shadow: 0px 0px 9px #ff0000,0px 0px 14px #ff0000,0px 0px 22px #ff0000,0px 0px 34px #ff0000;
+          box-shadow: 0px 0px 9px #ff0000,0px 0px 14px #ff0000,0px 0px 22px #ff0000,0px 0px 34px #ff0000;
+}
+
+/* ====================  Logo Icon  ==================== */
+.header__logo_icon {
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  font-size: 0.8em;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-animation: animLogo 6s infinite;
+          animation: animLogo 6s infinite;
+}
+
+@-webkit-keyframes animLogo {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes animLogo {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+/* ===================================  Logo  --End--  =================================== */
+/* ===================================  Menu body  --Start--  =================================== */
+/* ====================  Hide burger icon menu for PC  ==================== */
+.menu__icon {
+  display: none;
+}
+
+/* ====================  Menu list  ==================== */
+.menu__list > li {
+  position: relative;
+  margin: 0px 0px 0px 20px;
+}
+
+body._mobile .menu__list > li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+body._mobile .menu__list > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__link {
+  padding: 10px 0px;
+  width: 100%;
+  font-size: 1em;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-tap-highlight-color: rgba(68, 178, 195, 0.3);
+}
+
+body._pc .menu__link:hover {
+  text-decoration: underline;
+}
+
+.menu__link._activeLink {
+  text-decoration: underline;
+}
+
+/* ===================================  Dropdown List  --Start--  =================================== */
+.menu__list_sublist {
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.menu__list_sublist._active .menu__arrow {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.menu__list_sublist-title {
+  width: 100%;
+}
+
+.menu__list_sublist-title .menu__link {
+  width: auto;
+}
+
+/* ====================  Icon dropdown list  ==================== */
+.menu__arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin: 0px 0px 0px 5px;
+  border-left: solid 5px transparent;
+  border-right: solid 5px transparent;
+  border-top: solid 10px #ffffff;
+  -webkit-transition: -webkit-transform 0.6s ease 0s;
+  transition: -webkit-transform 0.6s ease 0s;
+  transition: transform 0.6s ease 0s;
+  transition: transform 0.6s ease 0s, -webkit-transform 0.6s ease 0s;
+}
+
+body._pc .menu__list > li:hover .menu__arrow {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.menu__sub_list {
+  position: absolute;
+  top: 100%;
+  right: 0px;
+  background-color: #000000;
+  padding: 15px;
+  min-width: 150px;
+  border: solid 1px #303030;
+  text-align: center;
+  z-index: 91;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body._pc .menu__list > li:hover .menu__sub_list {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  display: block;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.menu__sub_list > li {
+  margin: 0px 0px 6px 0px;
+}
+
+.menu__sub_list > li:last-child {
+  margin: 0px 0px;
+}
+
+.menu__sub_link {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #ffffff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body._pc .menu__sub_link:hover {
+  text-decoration: underline;
+}
+
+/* ===================================  Dropdown List  --End--  =================================== */
+/* ===================================  Menu body  --End--  =================================== */
+/* ===================================  Header  --End--  =================================== */
+/* ===================================  Progress Bar  --Start--  =================================== */
+.progressbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  z-index: 1111;
+  background: linear-gradient(172deg, #23f0bb, #50ff00, #f9ff00, #e11e1e, #8d00ff, #ff007a, #ff6700, #23f0bb, #f9ff00, #e11e1e, #e11e1e, #8d00ff, #ff6700);
+  background-size: 250% 60%;
+  -webkit-animation: animProgressBarBgc 12s ease-in-out infinite;
+          animation: animProgressBarBgc 12s ease-in-out infinite;
+}
+
+@-webkit-keyframes animProgressBarBgc {
+  0% {
+    background-position: 0% 18%;
+  }
+  50% {
+    background-position: 100% 83%;
+  }
+  100% {
+    background-position: 0% 18%;
+  }
+}
+
+@keyframes animProgressBarBgc {
+  0% {
+    background-position: 0% 18%;
+  }
+  50% {
+    background-position: 100% 83%;
+  }
+  100% {
+    background-position: 0% 18%;
+  }
+}
+
+/* ===================================  Progress Bar  --End--  =================================== */
+/* =============================================  Page  --Start--  ============================================= */
+.page {
+  padding-top: 80px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.page__content {
+  padding: 12px 6px;
+  color: #beb9a0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.page__content_one {
+  background-color: #482b15;
+}
+
+.page__content_two {
+  background-color: #332994;
+}
+
+.page__content_three {
+  background-color: #219414;
+}
+
+/* =============================================  Page  --End--  ============================================= */
+/* ===================================  Footer  --Start--  =================================== */
+.footer {
+  font-weight: 700;
+  text-align: center;
+  background-color: #482b15;
+}
+
+/* ===================================  Footer  --End--  =================================== */
+/* =============================================  Scroll Up Button  --Start--  ============================================= */
+.up__button {
+  position: fixed;
+  bottom: 6%;
+  right: 12px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 80;
+  pointer-events: all;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(68, 178, 195, 0.3);
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.up__button._active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.up__button_icon {
+  position: relative;
+  width: 54px;
+  height: 54px;
+  background: #dadada;
+  -webkit-box-shadow: 0px 0px 2px 0px #b8b8b8,0px 0px 4px 0px #b8b8b8,0px 0px 6px 0px #b8b8b8,0px 0px 10px 0px #b8b8b8;
+          box-shadow: 0px 0px 2px 0px #b8b8b8,0px 0px 4px 0px #b8b8b8,0px 0px 6px 0px #b8b8b8,0px 0px 10px 0px #b8b8b8;
+  pointer-events: all;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+body._pc .up__button_icon:hover {
+  -webkit-box-shadow: 0px 0px 5px 0px #b8b8b8,0px 0px 7px 0px #b8b8b8,0px 0px 10px 0px #b8b8b8,0px 0px 13px 0px #b8b8b8;
+          box-shadow: 0px 0px 5px 0px #b8b8b8,0px 0px 7px 0px #b8b8b8,0px 0px 10px 0px #b8b8b8,0px 0px 13px 0px #b8b8b8;
+}
+
+body._mobile .up__button_icon:active {
+  -webkit-box-shadow: 0px 0px 5px 0px #b8b8b8,0px 0px 7px 0px #b8b8b8,0px 0px 10px 0px #b8b8b8,0px 0px 13px 0px #b8b8b8;
+          box-shadow: 0px 0px 5px 0px #b8b8b8,0px 0px 7px 0px #b8b8b8,0px 0px 10px 0px #b8b8b8,0px 0px 13px 0px #b8b8b8;
+}
+
+/* =============================================  Scroll Up Button  --End--  ============================================= */
+/* =============================================  My Code  --End--  ============================================= */

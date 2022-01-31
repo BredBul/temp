@@ -1,0 +1,276 @@
+.page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.form {
+	&::after {
+		content: "";
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.9) url("../img/loading.gif") center / 50px no-repeat;
+		z-index: 9999;
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.5s ease 0s;
+	}
+	&._sending::after {
+		opacity: 1;
+		visibility: visible;
+	}
+	&__content {
+		max-width: 550px;
+		margin: 0px auto;
+		padding: 0px 12px;
+	}
+	&__title {
+		padding: 26px 0px;
+		font-size: 40px;
+		font-weight: 700;
+		text-align: center;
+	}
+	&__item {
+		padding: 12px 0px;
+	}
+	&__label {
+		font-size: 18px;
+		font-weight: 700;
+		display: block;
+		-webkit-tap-highlight-color: $clickByTouchColor0;
+		cursor: pointer;
+		span {
+			color: #09ff00;
+			font-size: 20px;
+		}
+	}
+	&__input {
+		padding: 0px 12px;
+		margin: 10px 0px;
+		width: 100%;
+		height: 50px;
+		font-size: 18px;
+		font-weight: 700;
+		border: solid 2px #969696;
+		border-radius: 5px;
+		outline: none;
+		cursor: pointer;
+		transition: all 0.4s ease-in-out;
+		&:hover {
+			box-shadow: 0px 0px 30px #808080;
+		}
+		&:focus {
+			box-shadow: 0px 0px 24px #c27f13;
+		}
+		&::placeholder {
+			font-size: 12px;
+			font-weight: 600;
+		}
+		&._error {
+			box-shadow: 0px 0px 16px #ff0000;
+		}
+	}
+	&__textarea {
+		padding: 6px 7px;
+		height: 240px;
+		resize: none;
+		transition: all 0.4s ease-in-out;
+		&::placeholder {
+			font-size: 18px;
+			font-weight: 600;
+		}
+	}
+	&__button {
+		margin: 22px 2px 45px;
+		display: flex;
+		justify-content: center;
+		button {
+			padding: 16px 4px;
+			width: 100%;
+			color: #ffffff;
+			font-size: 13px;
+			font-weight: 700;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			background-color: #7a956b;
+			border-radius: 30px;
+			outline: none;  
+			cursor: pointer;
+			box-shadow: 0px 5px 0px #000000;
+			transition: background-color 0.5s ease-in-out;
+			position: relative;
+			top: 0px;
+			&:hover {
+				background-color: #4f6146;
+			}
+			&:active {
+				top: 3px;
+				box-shadow: 0px 2px 0px #000000;
+			}
+		}
+	}
+}
+.options {
+	padding-top: 10px;
+	display: flex;
+	&__item {
+		-webkit-tap-highlight-color: $clickByTouchColor0;
+		&:last-child {
+			padding-left: 38px;
+		}
+	}
+	&__input {
+		display: none;
+		&:checked + .options__label::after {
+			transform: scale(1);
+		}
+	}
+	&__label {
+		display: inline-flex;
+		font-size: 16px;
+		line-height: 140%;
+		align-items: center;
+		position: relative;
+		cursor: pointer;
+		&::before {
+			content: "";
+			align-self: flex-start;
+			flex: 0 0 auto;
+			width: 24px;
+			height: 24px;
+			background-color: $colorWhite;
+			border-radius: 50%;
+			margin: 0px 10px 0px 0px;
+		}
+		&::after {
+			transition: transform 0.5s ease 0s;
+			content: "";
+			position: absolute;
+			top: 4px;
+			left: 4px;
+			width: 16px;
+			height: 16px;
+			background-color: #09ff00;
+			border-radius: 50%;
+			transform: scale(0);
+		}
+	}
+}
+.file {
+	padding-top: 16px;
+	display: flex;
+	&__label {
+		font-size: 20px;
+		font-weight: 700;
+	}
+	&__item {
+		position: relative;
+		height: 100%;
+		-webkit-tap-highlight-color: $clickByTouchColor0;
+	}
+	&__input {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		font-size: 0;
+		user-select: none;
+		opacity: 0;
+		cursor: pointer;
+		-webkit-tap-highlight-color: $clickByTouchColor0;
+	}
+	&__button {
+		padding: 10px 22px;
+		font-size: 18px;
+		font-weight: 700;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #77608d;
+		border-radius: 30px;
+	}
+	&__prewiew {
+		padding-left: 12px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		user-select: none;
+		-webkit-tap-highlight-color: $clickByTouchColor0;
+		display: none;
+		&._active {
+			display: flex;
+		}
+		&_img {
+			max-width: 240px;
+			box-shadow: 0px 0px 3px #ffffff, 
+						0px 0px 5px #ffffff, 
+						0px 0px 10px #00f3ff;
+		}
+		&_back {
+			max-width: 240px;
+			width: 100%;
+			margin-top: 12px;
+			padding: 10px 22px;
+			color: #000000;
+			font-size: 18px;
+			font-weight: 700;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #ffffff;
+			border-radius: 30px;
+			cursor: pointer;
+		}
+	}
+}
+.checkbox {
+	&._error .checkbox__label::before{
+		box-shadow: 0px 0px 16px #ff0000;
+	}
+	&__input {
+		display: none;
+		&:checked + .checkbox__label::after {
+			transform: scale(1);
+		}
+	}
+	&__label {
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 140%;
+		display: inline-flex;
+		align-items: center;
+		cursor: pointer;
+		position: relative;
+		-webkit-tap-highlight-color: $clickByTouchColor0;
+		user-select: none;
+		&::before {
+			content: "";
+			align-self: flex-start;
+			flex: 0 0 auto;
+			width: 24px;
+			height: 24px;
+			background-color: #fff;
+			border-radius: 4px;
+			margin: 0px 10px 0px 0px;
+		}
+		&::after {
+			transition: transform 0.5s ease 0s;
+			content: "";
+			width: 16px;
+			height: 16px;
+			position: absolute;
+			top: 4px;
+			left: 4px;
+			background-color: #77608d;
+			border-radius: 4px;
+			transform: scale(0);
+		}
+		a {
+			color: #10ff4a;
+		}
+	}
+}

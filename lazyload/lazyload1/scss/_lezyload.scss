@@ -1,0 +1,75 @@
+/* ====================  Icon Loading Lazy More Block  --Start--  ==================== */
+._loading-icon {
+    background: url("../img/loading.gif") center / 50px no-repeat;
+    height: 50px;
+}
+/* ====================  Icon Loading Lazy More Block  --End--  ==================== */
+.page {
+	&__section {
+		padding: 0px 6px;
+		&_1 {
+			background-color: #794f45;
+		}
+		&_2 {
+			padding: 30px 0px;
+			background-color: #7a956b;
+		}
+		&_3 {
+			background-color: #77608d;
+		}
+	}
+	&__title {
+		margin: 0px 0px 30px 0px;
+		font-size: 24px;
+	}
+	&__subtitle {
+		margin: 0px 0px 30px 0px;
+		font-size: 24px;
+	}
+	&__images {
+	    display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+}
+/* ====================  Lazy Text  --Start--  ==================== */
+.page__text {
+	font-size: 16px;
+	line-height: 150%;
+	& *:last-child {
+		margin-bottom: 0;
+	}
+	p {
+		margin: 0px 0px 15px 0px;
+	}
+}
+/* ====================  Lazy Text  --End--  ==================== */
+/* ====================  Lazy Images  --Start--  ==================== */
+.page__image {
+	padding: 20px 12px;
+    width: 100%;
+	height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: url("../img/loading.gif") center / 50px no-repeat;
+	img {
+		object-fit: contain;
+	}
+}
+/* ====================  Lazy Images  --End--  ==================== */
+/* ====================  Lazy Map  --Start--  ==================== */
+.page__map {
+    padding: 0px 0px 450px 0px;
+    position: relative;
+    background: url("../img/loading.gif") center / 50px no-repeat;
+}
+.page__map iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+/* ====================  Lazy Map  --End--  ==================== */

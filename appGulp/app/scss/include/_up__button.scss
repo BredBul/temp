@@ -1,0 +1,53 @@
+/* --------------------  Кнопка скрола на верх --Начало--   -------------------- */
+.up__button {
+	position: fixed;
+    bottom: 6%;
+    right: 12px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 111;
+    cursor: pointer;
+	&._active {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+.up__button_ico {
+	width: 44px;
+	height: 44px;
+	background: #dadada;
+	box-shadow: 0px 0px 2px 0px #b8b8b8,
+				0px 0px 4px 0px #b8b8b8,
+				0px 0px 6px 0px #b8b8b8,
+				0px 0px 10px 0px #b8b8b8;
+	transition: all 0.4s ease-in-out 0s;
+	position: relative;
+	&:hover {
+	box-shadow: 0px 0px 5px 0px #b8b8b8,
+				0px 0px 7px 0px #b8b8b8,
+				0px 0px 10px 0px #b8b8b8,
+				0px 0px 13px 0px #b8b8b8;
+	}
+	@media (max-width: 767px){
+        width: 36px;
+		height: 36px;
+	}
+}
+.icon__upbutton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform: rotate(180deg);
+	color: #000000;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+.__icons_up__button:before {
+	content: "\e900";
+	color: #000000;
+}
+/* --------------------  Кнопка скрола на верх --Конец--   -------------------- */

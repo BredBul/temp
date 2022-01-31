@@ -1,0 +1,8 @@
+@media screen and (max-width: 1200px){
+	.preloader__downloads {
+		&_icon {
+			width: calc(40px + (60 - 40) * ((100vw - 250px) / (1200 - 250)));
+			height: calc(40px + (60 - 40) * ((100vw - 250px) / (1200 - 250)));
+		}
+	}
+}

@@ -1,0 +1,64 @@
+/* ===================================  Dropdown List  --Start--  =================================== */
+.menu__list_sublist {
+	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	&._active .menu__arrow {
+		transform: rotate(-180deg);
+	}
+	&-title {
+		width: 100%;
+	}
+	&-title .menu__link {
+		width: auto;
+	}
+}
+/* ====================  Icon dropdown list  ==================== */
+.menu__arrow {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin: 0px 0px 0px 5px;
+	border-left: solid 5px transparent;
+	border-right: solid 5px transparent;
+	border-top: solid 10px #ffffff;
+	transition: transform 0.6s ease 0s;
+	body._pc .menu__list > li:hover & {
+		transform: rotate(-180deg);
+	}
+}
+.menu__sub_list {
+	position: absolute;
+	top: 100%;
+	right: 0px;
+	background-color: #000000;
+	padding: 15px;
+	min-width: 150px;
+	border: solid 1px #303030;
+	text-align: center;
+	z-index: 91;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	body._pc .menu__list > li:hover & {
+		opacity: 1;
+		visibility: visible;
+		transform: translate(0px, 0px);
+		display: block;
+		pointer-events: all;
+		cursor: pointer;
+	}
+	> li {
+		margin: 0px 0px 6px 0px;
+	}
+	> li:last-child{
+		margin: 0px 0px;
+	}
+}
+.menu__sub_link {
+	font-size: 0.8em;
+	font-weight: bold;
+	color: #ffffff;
+	user-select: none;
+	body._pc &:hover {
+		text-decoration: underline;
+	}
+}
+/* ===================================  Dropdown List  --End--  =================================== */

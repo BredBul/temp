@@ -1,0 +1,54 @@
+.anim__button {
+	position: fixed;
+	left: 12px;
+	bottom: 6%;
+	max-width: 120px;
+	width: 100%;
+	z-index: 9999999999;
+	cursor: pointer;
+    @media (max-width: 767px) {
+        max-width: 80px;
+    }
+    .anim__button_body {
+        padding: 4px 2px;
+        position: relative;
+        background-color: #000;
+        color: #fff;
+        font-size: 0.9em;
+        font-weight: bold;
+        border-radius: 3px;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        user-select: none;
+        @media (max-width: 767px) {
+            font-size: 0.7em;
+        }
+    }
+    .anim__button_border:before,
+    .anim__button_border:after {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background: linear-gradient(45deg, #e6fb04, #ff6600, #00ff66, #00ffff, #ff00ff, #ff0099, #6e0dd0, #ff3300, #099fff);
+        background-size: 400%;
+        width: calc(100% + 5px);
+        height: calc(100% + 5px);
+        z-index: -1;
+        animation: animButtonBody 20s linear infinite;
+        @keyframes animButtonBody {
+            0% {
+                background-position: 0 0;
+            }
+        
+            50% {
+                background-position: 400% 0%;
+            }
+        
+            100% {
+                background-position: 0 0;
+            }
+        }
+    }
+}

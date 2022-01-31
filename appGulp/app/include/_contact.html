@@ -1,0 +1,49 @@
+<div class="page__contact_content">
+    <div class="page__title">
+        <h1 class="contact__title">Контакты</h1>
+    </div>
+    <form id="form" class="form__body">
+        <!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="Site Name">
+		<input type="hidden" name="admin_email" value="officialbektur@gmail.com">
+		<input type="hidden" name="form_subject" value="Form Subject">
+		<!-- END Hidden Required Fields -->
+        <div class="contact__form">
+            <div class="form__item">
+                <label for="inputName" class="form__label">Ф.И.О<span>*</span>:</label>
+                <input id="inputName" type="text" name="name" class="form__input _req"> 
+            </div>
+            <div class="form__item">
+                <label for="inputEmail" class="form__label">E-mail<span>*</span>:</label>
+                <input id="inputEmail" type="text" name="email" class="form__input _req _email"> 
+            </div>
+            <div class="form__item">
+                <label for="textarea" class="form__label">Сообщение<span>*</span>:</label>
+                <textarea id="textarea" name="textarea" class="form__input textarea _req" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form__item">
+                <label for="formImage" class="file__label">Прикрепить макет:</label>
+                <div class="file">
+                    <div class="file__item">
+                        <input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file__input">
+                        <div class="file__button">Выбрать</div>
+                    </div>
+                    <div id="formPreview" class="file__prewiew"></div>
+                </div>
+            </div>
+            <div class="form__item">
+                <div class="checkbox">
+                    <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
+                    <label for="formAgreement" class="checkbox__label">
+                        <span>
+                            Я даю свое согласие на обработку первсональных данных в соответствия с <a href="">Условиями*</a>
+                        </span>
+                    </label>
+                </div>
+            </div>
+            <div class="form__button">
+                <button type="submit" class="form__submint" name="send">ОТПРАВИТЬ</button>
+            </div>
+        </div>
+    </form>
+</div>

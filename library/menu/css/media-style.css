@@ -1,0 +1,195 @@
+/* ===================================  For PC  --Start--  =================================== */
+@media screen and (min-width: 767px){
+	.menu__list {
+		display: flex;
+		align-items: center;
+	}
+	.menu__list > li {
+		padding: 10px 0px;
+	}
+	.menu__sub_list {
+		transform: translate(0px, 10%);
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		transition: all 0.3s ease 0s;
+	}
+	body._mobile .menu__list_sublist._active .menu__sub_list {
+		opacity: 1;
+		visibility: visible;
+		transform: translate(0px, 0px);
+		pointer-events: all;
+		cursor: pointer;
+		display: block;
+	}
+	body._mobile .menu__list_sublist._active .menu__arrow {
+		transform: rotate(-180deg);
+	}
+@supports (-webkit-appearance:none){}
+}
+/* ===================================  For PC  --End--  =================================== */
+/* ===================================  For Mobile  --Start--  =================================== */
+/* ===================================  Max-Width 767px  --Start--  =================================== */
+@media screen and (max-width: 767px){
+	/* ====================  NoScrript  --Start--  ==================== */
+	.noscript__text {
+		font-size: calc(10px + (13 - 10) * ((100vw - 320px) / (767 - 320)));
+	}
+	/* ====================  NoScrript  --Start--  ==================== */
+	/* ===================================  Menu Burger  --Start--  =================================== */
+	/* ====================  Burger menu icon  --Start--  ==================== */
+	.menu__icon {
+		z-index: 5;
+		display: block;
+		position: relative;
+		width: 46px;
+		height: 28px;
+		cursor: pointer;
+		-webkit-tap-highlight-color: rgba(68, 178, 195, 38%);
+	}
+	.menu__icon span,
+	.menu__icon::before,
+	.menu__icon::after {
+		left: 0;
+		position: absolute;
+		height: 10%;
+		width: 100%;
+		transition: all 0.3s ease 0s;
+		background-color: #ffffff;
+		box-shadow: 0px 0px 3px #ffffff;
+	}
+	.menu__icon::before,
+	.menu__icon::after {
+		content: "";
+	}
+	.menu__icon::before {
+		top: 0px;
+	}
+	.menu__icon::after {
+		bottom: 0px;
+	}
+	.menu__icon span {
+		top: 50%;
+		transform: scale(1) translate(0px, -50%);
+	}
+	/* ====================  Burger menu icon on click  ==================== */
+	.menu__icon._active span{
+		transform: scale(0);
+	} 
+	.menu__icon._active::before {
+		top: 50%;
+		transform: rotate(-45deg) translate(0px, -50%)
+	}
+	.menu__icon._active::after {
+		bottom: 50%;
+		transform: rotate(45deg) translate(0px, 50%)
+	}
+	/* ====================  Burger menu icon  --End--  ==================== */
+	/* ====================  Menu body  --Start--  ==================== */
+	.menu__body {
+		position: fixed;
+		top: 0px;
+		right: -100%;
+		width: 100%;
+		height: 100%;
+		padding: 100px 30px 30px 30px;
+		transition: right 0.5s ease 0s;
+		background-color: rgba(0, 0, 0, 0.95);
+		overflow-y: auto;
+	}
+    .menu__body._active::before {
+		content: "";
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 70px;
+		background-color: #000000;
+		z-index: 10000;
+	}
+	.menu__body._active {
+		right: 0px;
+	}
+	.menu__list {
+		margin: 0px 20%;
+		position: relative;
+		z-index: 1200;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.menu__list li {
+		display: flex;
+		justify-content: center;
+	}
+	.menu__list > li {
+		flex-wrap: wrap;
+		margin: 0px 0px 0px 0px;
+	}
+	.menu__link {
+		font-size: calc(26px + (32 - 26) * ((100vw - 320px) / (767 - 320)));
+    	text-align: center;
+		margin: 20px 0px;
+	}
+	/* ====================  Menu body  --End--  ==================== */
+	/* ====================  Dropdown list  --Start--  ==================== */
+	.menu__list > li._active .menu__sub_list{
+		display: block;
+	}
+	.menu__list > li._active .menu__arrow {
+		transform: rotate(-180deg);
+	}
+	.menu__sub_list {
+		margin: 10px 0px 0px;
+		position: relative;
+		background-color: #ffffff;
+		display: none;
+	}
+	.menu__list_sublist-title {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: nowrap;
+	}
+	.menu__arrow {
+		margin: 0px 0px 0px 10px;
+	}
+	.menu__sub_list > li:nth-child(1) {
+		margin-top: 0px;
+	}
+	.menu__sub_list > li:last-child {
+		margin: 12px 16px 0px;
+	}
+	.menu__sub_list > li {
+		margin: 12px 16px;
+	}
+	.menu__sub_link {
+		width: 100%;
+		color: #000000;
+		font-size: calc(20px + (22 - 20) * ((100vw - 320px) / (767 - 320)));
+	}
+	/* ====================  Dropdown list  --End--  ==================== */
+	/* ===================================  Menu Burger  --End--  =================================== */
+	/* ===================================  Page  --Start--  =================================== */
+	/* ===================================  Page  --End--  =================================== */
+	/* ===================================  Scroll Up Button  --Start--  =================================== */
+	.up__button_icon {
+		width: 58px;
+		height: 58px;
+	}
+	/* ===================================  Scroll Up Button  --End--  =================================== */
+	@supports (-webkit-appearance:none){}
+}
+/* ===================================  Max-Width 767px  --End--  =================================== */
+@media screen and (max-width: 360px){
+	.menu__list {
+		margin: 0px 2px;
+	}
+	.up__button_icon {
+		width: 54px;
+		height: 54px;
+	}
+@supports (-webkit-appearance:none){}
+}
+/* ===================================  For Mobile  --End--  =================================== */

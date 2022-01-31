@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<defs>
+<font id="upload" horiz-adv-x="1024">
+<font-face units-per-em="1024" ascent="960" descent="-64" />
+<missing-glyph horiz-adv-x="1024" />
+<glyph unicode="&#x20;" horiz-adv-x="512" d="" />
+<glyph unicode="&#xe900;" glyph-name="upload" d="M548.521 714.161c-19.899 19.899-53.144 19.899-73.094 0l-460.312-459.134c-20.154-20.154-20.154-52.838 0-72.941 20.154-20.154 52.889-20.154 73.043 0l423.84 422.662 423.789-422.713c20.205-20.154 52.889-20.154 73.094 0 20.154 20.154 20.154 52.838 0 72.941l-460.359 459.185z" />
+</font></defs></svg>

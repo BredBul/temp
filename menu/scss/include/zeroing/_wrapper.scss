@@ -1,0 +1,8 @@
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	&._done {
+		display: none;
+	}
+}

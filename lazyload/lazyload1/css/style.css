@@ -1,0 +1,249 @@
+@charset "UTF-8";
+/* =============================================  Zeroing  --Start--  ============================================= */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+picture,
+img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* ====================  If JavaScript is disabled  --Start--  ==================== */
+noscript {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.97);
+  z-index: 9999999999999999;
+}
+
+.noscript__content {
+  padding: 4px 12px;
+  text-align: center;
+}
+
+.noscript__text {
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.noscript__text a {
+  color: #33ff00;
+}
+
+/* ====================  If JavaScript is disabled  --End--  ==================== */
+/* =============================================  Zeroing  --End--  ============================================= */
+/* =============================================  My Code  --Start--  ============================================= */
+body {
+  color: #ffffff;
+  background-color: #181818;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body._lock {
+  overflow-y: hidden;
+}
+
+body._minWindowScreen250 {
+  overflow: auto;
+}
+
+.wrapper {
+  opacity: 1;
+  visibility: visible;
+}
+
+.wrapper._done {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+/* ====================  Bounding Сontainer  --Start--  ==================== */
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+/* ====================  Bounding Сontainer  --Start--  ==================== */
+/* =============================================  Page  --Start--  ============================================= */
+.page {
+  padding: 80px 0px 0px 0px;
+}
+
+.page._minWindowScreen250 {
+  padding: 8px 0px 0px 0px;
+}
+
+/* =============================================  Page  --End--  ============================================= */
+/* ====================  Icon Loading Lazy More Block  --Start--  ==================== */
+._loading-icon {
+  background: url("../img/loading.gif") center/50px no-repeat;
+  height: 50px;
+}
+
+/* ====================  Icon Loading Lazy More Block  --End--  ==================== */
+.page__section {
+  padding: 0px 6px;
+}
+
+.page__section_1 {
+  background-color: #794f45;
+}
+
+.page__section_2 {
+  padding: 30px 0px;
+  background-color: #7a956b;
+}
+
+.page__section_3 {
+  background-color: #77608d;
+}
+
+.page__title {
+  margin: 0px 0px 30px 0px;
+  font-size: 24px;
+}
+
+.page__subtitle {
+  margin: 0px 0px 30px 0px;
+  font-size: 24px;
+}
+
+.page__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* ====================  Lazy Text  --Start--  ==================== */
+.page__text {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.page__text *:last-child {
+  margin-bottom: 0;
+}
+
+.page__text p {
+  margin: 0px 0px 15px 0px;
+}
+
+/* ====================  Lazy Text  --End--  ==================== */
+/* ====================  Lazy Images  --Start--  ==================== */
+.page__image {
+  padding: 20px 12px;
+  width: 100%;
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background: url("../img/loading.gif") center/50px no-repeat;
+}
+
+.page__image img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/* ====================  Lazy Images  --End--  ==================== */
+/* ====================  Lazy Map  --Start--  ==================== */
+.page__map {
+  padding: 0px 0px 450px 0px;
+  position: relative;
+  background: url("../img/loading.gif") center/50px no-repeat;
+}
+
+.page__map iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* ====================  Lazy Map  --End--  ==================== */
+/* =============================================  My Code  --End--  ============================================= */

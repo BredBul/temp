@@ -1,0 +1,12 @@
+/* ===================================  Anim  --Start--  =================================== */
+._anim-show {
+    transform: translate(220%, 0%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+._anim-show._active,
+._active ._anim-show {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+/* ===================================  Anim  --End--  =================================== */

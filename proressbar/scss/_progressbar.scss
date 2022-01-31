@@ -1,0 +1,18 @@
+/* ===================================  Progress Bar  --Start--  =================================== */
+.progressbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 6px;
+	z-index: 1111;
+	background: linear-gradient(172deg, #23f0bb, #50ff00, #f9ff00, #e11e1e, #8d00ff, #ff007a, #ff6700,#23f0bb, #f9ff00, #e11e1e, #e11e1e, #8d00ff, #ff6700);
+    background-size: 250% 60%;
+    animation: animProgressBarBgc 12s ease-in-out infinite;
+	@keyframes animProgressBarBgc {
+		0%{background-position:0% 18%}
+		50%{background-position:100% 83%}
+		100%{background-position:0% 18%}
+	}
+}
+/* ===================================  Progress Bar  --End--  =================================== */

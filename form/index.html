@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--------------------  Meta Viewport Adaptation for a mobile device  -------------------->
+	<meta name="viewport" id="metaViewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<!--------------------  Top Panel Color --Start--  -------------------->
+	<!-------------------- Chrome, Firefox OS and Opera -------------------->
+	<meta name="theme-color" content="#131419" />
+	<!--------------------  Windows Phone -------------------->
+	<meta name="msapplication-navbutton-color" content="#131419" />
+	<!--------------------  iOS Safari ----->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-transcluent" />
+	<!-------------------- Top Panel Color --End--  -------------------->
+	<!--------------------  SHORTCUT ICON  -------------------->
+	<link rel="shortcut icon" href="img/shortcuticons/icon.jpg" type="image/x-icon" />
+	<!--------------------  TITLE  -------------------->
+	<title>BB</title>
+	<!-------------------- DESCRIPTION OF THE SITE -------------------->
+	<meta name="description" content="" />
+	<!--------------------  Don't forget "On" indexing  -------------------->
+	<meta name="robots" content="none" />
+	<!-------------------- The author of the site -------------------->
+	<meta name="author" content="Akylbek u Bektur" />
+	<!--------------------  Additional connection  --Start--  -------------------->
+	<!--------------------  Fonts  -------------------->
+	<link rel="stylesheet" href="fonts/icon-upload/style.css" />
+	<!--------------------  Swiper  -------------------->
+	<!-- <link rel="stylesheet" href="library/swiper/swiper-bundle.min.css"/> -->
+	<!--------------------  Fancybox -------------------->
+	<!-- <link rel="stylesheet" href="library/fancybox/jquery.fancybox.min.css"/> -->
+	<!--------------------  CSS  -------------------->
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/media-style.css" />
+	<!--------------------  Additional connection  --End--  -------------------->
+</head>
+<body>
+	<!---------------------------------------------  Wrapper  --Start--  --------------------------------------------->
+	<div class="wrapper">
+		<!-----------------------------------  Page  --Start--  ----------------------------------->
+		<main class="page">
+			<section class="form">
+				<form id="form" class="form">
+					<div class="form__content">
+						<h2 class="form__title">Отправить данных на почту</h2>
+						<div class="form__item">
+							<label for="formInputName" class="form__label">Ф.И.О<span>*</span>:</label>
+							<input id="formInputName" type="text" name="name" class="form__input _req"> 
+						</div>
+						<div class="form__item">
+							<label for="formInputEmail" class="form__label">E-mail<span>*</span>:</label>
+							<input id="formInputEmail" type="text" name="email" class="form__input _req _email"> 
+						</div>
+						<div class="form__item">
+							<div class="form__label">Левый или Правый</div>
+							<div class="options">
+								<div class="options__item">
+									<input id="formRightHanded" checked type="radio" value="right" name="hand" class="options__input"> 
+									<label for="formRightHanded" class="options__label"><span>Правый</span></label>
+								</div>
+								<div class="options__item">
+									<input id="formLeftHanded" type="radio" value="left" name="hand" class="options__input"> 
+									<label for="formLeftHanded" class="options__label"><span>Левый</span></label>
+								</div>
+							</div>
+						</div>
+						<div class="form__item">
+							<label for="textarea" class="form__label">Сообщение<span>*</span>:</label>
+							<textarea id="textarea" name="textarea" class="form__input form__textarea _req"></textarea>
+						</div>
+						<div class="form__item form__file">
+							<label for="formImage" class="file__label">Прикрепить фото</label>
+							<div class="file">
+								<div class="file__item">
+									<input id="formImageInput" accept=".jpg, .png, .gif" type="file" name="image" class="file__input">
+									<div class="file__button">Выбрать</div>
+								</div>
+								<div class="file__prewiew">
+									<div id="formPreviewImg" class="file__prewiew_img"></div>
+									<div class="file__prewiew_back">
+										Отмена
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form__item">
+							<div class="checkbox">
+								<input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
+								<label for="formAgreement" class="checkbox__label">
+									<span>
+										Я даю свое согласие на обработку первсональных данных в соответствия с <a href="">Условиями*</a>
+									</span>
+								</label>
+							</div>
+						</div>
+						<div class="form__button">
+							<button type="submit" name="send">Отправить</button>
+						</div>
+					</div>
+				</form>
+			</section>
+		</main>
+		<!-----------------------------------  Page  --End-- ----------------------------------->
+	</div>
+	<!---------------------------------------------  Wrapper  --End--  --------------------------------------------->
+	<!-----------------------------------  Script  --Start-- ----------------------------------->
+	<script src="library/jquery/jquery.min.js"></script>
+	<!--------------------  My Script  -------------------->
+	<script src="js/script.js"></script>
+	<!--------------------  No Script  -------------------->
+	<noscript>
+		<div class="noscript__content">
+			<div class="noscript__text">
+				Для Полной функциональности этого Сайта необходимо Включить JavaScript. Вот
+				<a href="https://geekhacker.ru/kak-vklyuchit-javascript-v-brauzere/#i-2">
+					Инструкции, Как Включить JavaScript в Вашем Браузере.
+				</a>
+			</div>
+			<div class="noscript__text">
+				JavaScript must be Enabled for Full Functionality of this Site. Here are
+				<a href="https://yandex.com/support/common/browsers-settings/browsers-java-js-settings.html">
+					Instructions on How to Enable JavaScript in Your Browser.
+				</a>
+			</div>
+		</div>
+	</noscript>
+	<!--------------------  No Script  -------------------->
+	<!-----------------------------------  Script  --End-- ----------------------------------->
+</body>
+</html>

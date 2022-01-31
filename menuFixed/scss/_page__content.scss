@@ -1,0 +1,16 @@
+.page__content {
+	padding: 12px 6px;
+	color: #beb9a0;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 120%;
+	&_one {
+		background-color: #482b15;
+	}
+	&_two {
+		background-color: #332994;
+	}
+	&_three {
+		background-color: #219414;
+	}
+}

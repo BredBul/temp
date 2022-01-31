@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('_head.html',{
+	"title":"Шифр Цезаря"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('_header.html',{})
+			<main class="page">
+				<section class="cipher">
+					<form action="#" class='cipher__container _container'>
+						<div class="cipher__top">
+							<h1 class="cipher__title">Шифр Цезаря</h1>
+							<div class="cipher__settings">
+								<div class="cipher__back">
+									<span>Назад</span>
+									<input id="backDirection" name="backDirectionBtn" type="checkbox" class="cipher__checkbox">
+									<label for="backDirection" class="cipher__label"></label>
+								</div>
+								<div class="cipher__shift">
+									<span>Сдвиг</span>
+									<input required min="1" max="26" class="cipher__input" name="shift" type="number">
+								</div>
+							</div>
+						</div>
+						<div class="cipher__fields">
+							<div class="cipher__field">
+								<textarea required name="text"></textarea>
+							</div>
+							<div class="cipher__field">
+								<textarea name="result"></textarea>
+							</div>
+						</div>
+						<div class="cipher__buttons">
+							<button class="cipher__btn cipher__generate">Генереровать</button>
+							<button class="cipher__btn cipher__desipher">Расшифровать</button>
+						</div>
+					</form>
+				</section>
+			</main>
+			@@include('_footer.html',{})
+		</div>
+		@@include('_popup.html',{})
+		@@include('_js.html',{})
+	</body>
+</html>

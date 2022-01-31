@@ -1,0 +1,14 @@
+
+RewriteEngine on
+
+DirectoryIndex index.min.html
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+<Files ~ "\.(ini|log)$">
+
+deny from all
+
+</Files>
+
+Options -Indexes

@@ -1,0 +1,14 @@
+.wrapper {
+    background-color: #34434f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+	opacity: 1;
+	visibility: visible;
+	&._done {
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.3s ease 0s;
+	}
+}

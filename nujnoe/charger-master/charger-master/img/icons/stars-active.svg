@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="146" height="24" viewBox="0 0 146 24">
+    <defs>
+        <clipPath id="rs1sa">
+            <path fill="#fff" d="M13-.078
+            L10.075 9.31.001 9.117
+            l8.267 5.61-3.302 9.27
+            L13 18.075
+            l8.034 5.922-3.302-9.27
+            L26 9.117
+            l-10.074.193z"/>
+        </clipPath>
+        <clipPath id="rs2sa">
+            <path fill="#fff" d="M43-.078
+            L40.075 9.31 30.001 9.117
+            l8.267 5.61-3.302 9.27
+            L43 18.075
+            l8.034 5.922-3.302-9.27
+            L56 9.117
+            l-10.074.193z"/>
+        </clipPath>
+        <clipPath id="rs3sa">
+            <path fill="#fff" d="M73-.078
+            L70.075 9.31 60.001 9.117
+            l8.267 5.61-3.302 9.27
+            L73 18.075
+            l8.034 5.922-3.302-9.27
+            L86 9.117
+            l-10.074.193z"/>
+        </clipPath>
+        <clipPath id="rs4sa">
+            <path fill="#fff" d="M103-.078
+            L100.075 9.31 90.001 9.117
+            l8.267 5.61-3.302 9.27
+            L103 18.075
+            l8.034 5.922-3.302-9.27
+            L116 9.117
+            l-10.074.193z"/>
+        </clipPath>
+        <clipPath id="rs5sa">
+            <path fill="#fff" d="M133-.078
+            L130.075 9.31 120.001 9.117
+            l8.267 5.61-3.302 9.27
+            L133 18.075
+            l8.034 5.922-3.302-9.27
+            L146 9.117
+    l-10.074.193z"/>
+        </clipPath>
+    </defs>
+    <path fill="#fff" stroke="#3cd072" stroke-miterlimit="20" stroke-width="2" d="M13-.078
+    L10.075 9.31.001 9.117
+    l8.267 5.61-3.302 9.27
+    L13 18.075
+    l8.034 5.922-3.302-9.27
+    L26 9.117
+    l-10.074.193z" clip-path="url(&quot;#rs1sa&quot;)"/>
+    <path fill="#fff" stroke="#3cd072" stroke-miterlimit="20" stroke-width="2" d="M43-.078
+    L40.075 9.31 30.001 9.117
+    l8.267 5.61-3.302 9.27
+    L43 18.075
+    l8.034 5.922-3.302-9.27
+    L56 9.117
+    l-10.074.193z" clip-path="url(&quot;#rs2sa&quot;)"/>
+    <path fill="#fff" stroke="#3cd072" stroke-miterlimit="20" stroke-width="2" d="M73-.078
+    L70.075 9.31 60.001 9.117
+    l8.267 5.61-3.302 9.27
+    L73 18.075
+    l8.034 5.922-3.302-9.27
+    L86 9.117
+    l-10.074.193z" clip-path="url(&quot;#rs3sa&quot;)"/>
+    <path fill="#fff" stroke="#3cd072" stroke-miterlimit="20" stroke-width="2" d="M103-.078
+    L100.075 9.31 90.001 9.117
+    l8.267 5.61-3.302 9.27
+    L103 18.075
+    l8.034 5.922-3.302-9.27
+    L116 9.117
+    l-10.074.193z" clip-path="url(&quot;#rs4sa&quot;)"/>
+    <path fill="#fff" stroke="#3cd072" stroke-miterlimit="20" stroke-width="2" d="M133-.078
+    L130.075 9.31 120.001 9.117
+    l8.267 5.61-3.302 9.27
+    L133 18.075
+    l8.034 5.922-3.302-9.27
+    L146 9.117
+    l-10.074.193z" clip-path="url(&quot;#rs5sa&quot;)"/>
+</svg>

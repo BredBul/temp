@@ -1,0 +1,117 @@
+.hi {
+    position: relative;
+    background: #0dbaff;
+    .hi__content {
+        @media (max-width: 1024px){
+            height: 600px;
+        }
+    }
+    .hi__body{
+        width: 100%;
+        z-index: 100;
+        display: flex;
+        justify-content: space-between;
+        min-height: 100vh;
+        height: 100%;
+        align-items: center;
+        .hi__body_text {
+            position: relative;
+            left: 0px;
+            width: 50%;
+            z-index: 200;
+            padding: 0px 1em;
+            @media (max-width: 1024px){
+                width: 100%;
+                text-align: center;
+                position: absolute;
+                bottom: 11%;
+            }
+            .hi__text_title {
+                font-size: 2.4em;
+                font-weight: bold;
+                line-height: 140%;
+                @media (max-width: 1024px){
+                    font-size: 4em;
+                }
+                @media (max-width: 767px){
+                    font-size: 2em;
+                }
+            }
+            .hi__text_name {
+                padding-top: 3%;
+                display: inline-block;
+                font-size: 1.8em;
+                font-weight: bold;
+                line-height: 130%;
+                z-index: 5;
+                width: 100%;
+                animation: shrink 4s infinite;
+                @media (max-width: 1024px){
+                    font-size: 2.4em;
+                }
+                @media (max-width: 767px){
+                    font-size: 1.3em;
+                }
+                @keyframes shrink {
+                    0% {
+                        text-shadow: 0px 0px 1px #fb1a0a;
+                        }
+                    100% { 
+                        text-shadow: 0px 0px 42px #fb1a0a;
+                        }
+                }
+            }
+            .hi__button {
+                display: flex;
+                align-items: center;
+                padding: 7% 0px 0px 2%;
+                @media (max-width: 1024px){
+                    padding: 12% 0px 0px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                &_text {
+                    padding: 10px 18px;
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    border: solid 1px #ffffff;
+                    border-radius: 30px;
+                    transition: all .3s ease 0s;
+                    @media (max-width: 1024px){
+                        font-size: 1.5em;
+                        background-color: #0dbaff;
+                        text-decoration: none;
+                    }
+                    @media (max-width: 767px){
+                        font-size: 0.8em;
+                    }
+                }
+            }
+        }
+        .hi__body_images {
+            position: absolute;
+            right: 0%;
+            bottom: 0px;
+            width: 70%;
+            height: 90%;
+            img {
+                position: absolute;
+                right: 0px;
+                max-width: 100%;
+                height: 100%;
+                @media (max-width: 1024px){
+                    display: none;
+                }
+            }
+            @media (max-width: 1024px){
+                background-image:url(../img/man_1.png);
+                background-size: cover;
+                left: 0px;
+                width: 100%;
+                background-position-x: 40%;
+                z-index: 100;
+            }
+        }
+    }
+}

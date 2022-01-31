@@ -1,0 +1,191 @@
+@charset "UTF-8";
+/* =============================================  Zeroing  --Start--  ============================================= */
+* {
+  padding: 0px 0px;
+  margin: 0px 0px;
+  border: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0px 0px;
+  border: 0;
+}
+
+a, a:visited {
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a:hover, a:active {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* ====================  If JavaScript is disabled  --Start--  ==================== */
+noscript {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.97);
+  z-index: 9999999999999999;
+}
+
+.noscript__content {
+  padding: 4px 12px;
+  text-align: center;
+}
+
+.noscript__text {
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.noscript__text a {
+  color: #33ff00;
+}
+
+/* ====================  If JavaScript is disabled  --End--  ==================== */
+/* =============================================  Zeroing  --End--  ============================================= */
+/* =============================================  My Code  --Start--  ============================================= */
+body {
+  background-color: #181818;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.wrapper {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ====================  Bounding Сontainer  --Start--  ==================== */
+.container {
+  max-width: 800px;
+  margin: 0px auto;
+  padding: 0px 12px;
+}
+
+/* ====================  Bounding Сontainer  --Start--  ==================== */
+/* =============================================  Spoilers  --Start--  ============================================= */
+.spoiler__items {
+  margin: 0px 0px 30px 0px;
+}
+
+.spoiler__item {
+  margin: 0px 0px 10px 0px;
+}
+
+.spoiler__item_title {
+  padding: 15px;
+  width: 100%;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+  background: none;
+  background-color: transparent;
+  position: relative;
+}
+
+.spoiler__items._init .spoiler__item_title {
+  padding: 15px 40px 15px 10px;
+  cursor: pointer;
+}
+
+.spoiler__items._init .spoiler__item_title::before, .spoiler__items._init .spoiler__item_title::after {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+}
+
+.spoiler__items._init .spoiler__item_title::after {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.spoiler__items._init .spoiler__item_title._active::after {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.spoiler__item_text {
+  padding: 0px 15px 10px;
+  color: #e7e7e7;
+  line-height: 170%;
+  font-weight: 700;
+}
+
+/* =============================================  Spoilers  --Start--  ============================================= */
+._items_1 .spoiler__item {
+  background-color: #76608b;
+}
+
+._items_2 .spoiler__item {
+  background-color: #785147;
+}
+
+._items_3 .spoiler__item {
+  background-color: #7b9075;
+}
+
+/* =============================================  My Code  --End--  ============================================= */

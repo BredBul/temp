@@ -1,0 +1,12 @@
+body {
+	color: #ffffff;
+	background-color: #181818;
+	overflow-x: hidden;
+	overflow-y: auto;
+	&._lock {
+		overflow-y: hidden;
+	}
+	&._minWindowScreen250 {
+		overflow: auto;
+	}
+}

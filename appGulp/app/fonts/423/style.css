@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'iconsos';
+  src:  url('fonts/iconsos.eot?yoedim');
+  src:  url('fonts/iconsos.eot?yoedim#iefix') format('embedded-opentype'),
+    url('fonts/iconsos.ttf?yoedim') format('truetype'),
+    url('fonts/iconsos.woff?yoedim') format('woff'),
+    url('fonts/iconsos.svg?yoedim#iconsos') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="__icon_"]:before, [class*=" __icon_"]:before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'iconsos' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.__icon_vk:before {
+  content: "\e900";
+  color: #ffffff;
+}
+.__icon_instagram:before {
+  content: "\ea92";
+  color: #ffffff;
+}
+.__icon_whatsapp:before {
+  content: "\ea93";
+  color: #ffffff;
+}

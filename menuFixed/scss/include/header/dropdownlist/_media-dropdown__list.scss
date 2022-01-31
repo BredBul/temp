@@ -1,0 +1,39 @@
+/* ====================  Dropdown List  --Start--  ==================== */
+.menu__list_sublist-title {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+/* ====================  Icon dropdown list  ==================== */
+.menu__arrow {
+	margin: 0px 0px 0px 10px;
+	.menu__list > li._active & { 
+		transform: rotate(-180deg);
+	}
+}
+.menu__sub_list {
+	margin: 10px 0px 0px;
+	position: relative;
+	background-color: #ffffff;
+	display: none;
+	.menu__list > li._active & {
+		display: block;
+	}
+	& > li:nth-child(1) {
+		margin-top: 0px;
+	}
+	& > li:last-child {
+		margin: 12px 16px 0px;
+	}
+	& > li {
+		margin: 12px 16px;
+	}
+}
+.menu__sub_link {
+	width: 100%;
+	color: #000000;
+	font-size: calc(20px + (22 - 20) * ((100vw - 320px) / (767 - 320)));
+}
+/* ====================  Dropdown List  --End--  ==================== */

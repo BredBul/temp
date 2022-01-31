@@ -1,0 +1,9 @@
+@media screen and (max-width: 1200px){
+	.page__image {
+		height: calc(250px + (450 - 250) * ((100vw - 250px) / (1200 - 250)));
+	}
+	.page__map {
+		padding-bottom: calc(220px + (450 - 220) * ((100vw - 250px) / (1200 - 250)));
+	}
+@supports (-webkit-appearance:none){}
+}
